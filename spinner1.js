@@ -22,26 +22,22 @@ setTimeout(() => {
 }, 1500);
 
 setTimeout(() => {
-  process.stdout.write('\r|   ');
+  process.stdout.write('\r/   ');
 }, 1800);
 
 setTimeout(() => {
-  process.stdout.write('\r/   ');
-}, 2100);
-
-setTimeout(() => {
   process.stdout.write('\r-   ');
-}, 2400);
+}, 2100);
 
 setTimeout(() => {
   // Need to escape the backslash since it's a special character.
   process.stdout.write('\r\\   '); 
-}, 2700);
+}, 2400);
 
 setTimeout(() => {
   process.stdout.write('\r|   ');
-}, 3000);
+}, 2700);
 
 setTimeout(() => {
   process.stdout.write('\n');
-}, 3300);
+}, 3000);
